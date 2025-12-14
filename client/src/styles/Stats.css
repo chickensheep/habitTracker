@@ -1,0 +1,81 @@
+.statsContainer {
+	background-color: hsl(0, 0%, 95%);
+	width: 1200px;
+
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.statsHeader {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.bla {
+	display: flex;
+	justify-content: center;
+}
+
+.displayMonthHeader {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.statsPrevButton,
+.statsNextButton {
+	transition: transform 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.statsPrevButton:hover,
+.statsNextButton:hover {
+	transform: scale(1.3);
+}
+
+.statsGroupBiggerContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.statsGroupContainer {
+	display: flex;
+	gap: 5px;
+	border: rgb(0, 30, 255) 3px solid;
+	background-color: rgb(199, 253, 255);
+	padding: 5px;
+	border-radius: 10px;
+	width: 240px;
+	justify-content: center;
+}
+
+.colourBigger {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.colour {
+	gap: 10px;
+	display: flex;
+	border: black 3px solid;
+	background-color: hsl(0, 0%, 90%);
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.statsLoadingBiggerDiv {
+	display: flex;
+	justify-content: center;
+}
+
+.statsLoadingDiv {
+	width: 200px;
+	height: 200px;
+}

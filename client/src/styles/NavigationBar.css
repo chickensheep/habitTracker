@@ -1,0 +1,52 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.navigationBarContainer {
+	width: 1200px;
+	background-color: hsl(0, 0%, 85%);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 26px;
+	color: black;
+	font-family: "Courier New";
+	font-weight: 600;
+}
+
+.navigationBarRight {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	position: relative;
+}
+
+.navigationBarLeft,
+.navigationBarHabitDiv,
+.navigationBarHistoryDiv,
+.navigationBarProfileDiv {
+	position: relative;
+}
+
+.navigationBarCalander::after,
+.navigationBarHabit::after,
+.navigationBarHistory::after,
+.navigationBarProfile::after {
+	width: 0%;
+	height: 3.5px;
+	background-color: black;
+	content: "";
+	display: block;
+	transition: width 0.3s ease-in-out;
+	position: absolute;
+	bottom: 1px;
+}
+
+.navigationBarCalander:hover::after,
+.navigationBarHabit:hover::after,
+.navigationBarHistory:hover::after,
+.navigationBarProfile:hover::after {
+	width: 100%;
+}

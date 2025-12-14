@@ -1,0 +1,45 @@
+.filterContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.filterButton {
+	border: rgb(0, 30, 255) 3px solid;
+	background-color: rgb(199, 253, 255);
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.filterButton:hover {
+	background-color: rgb(170, 252, 255);
+	cursor: pointer;
+	box-shadow: rgb(0, 30, 255) 0px 0px 3px;
+}
+
+.filterArrow {
+	display: inline-block;
+	transform: rotate(180deg);
+	transition: transform 0.2s ease-in-out;
+}
+
+.filterArrow.filterOpen {
+	transform: rotate(0deg);
+}
+
+.filterDropDownContainer {
+	position: relative;
+}
+
+.filterDropDown {
+	transform: scaleY(0);
+	position: absolute;
+	background-color: white;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: top;
+	width: 150px;
+	box-shadow: black 0 0 7px;
+}
+
+.filterDropDown.filterOpen {
+	transform: scaleY(1);
+}

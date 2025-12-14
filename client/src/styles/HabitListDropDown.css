@@ -1,0 +1,60 @@
+.dropDownContainer {
+	position: relative;
+}
+
+.dropDownButton {
+	background-color: white;
+	padding: 4px 10px;
+	border-radius: 50%;
+	color: black;
+	font-weight: 600;
+	box-shadow: black 0px 0px 3px;
+}
+
+.dropDownButton.open {
+	border-bottom-right-radius: 0%;
+	border-bottom-left-radius: 0%;
+}
+
+.dropDownButton:hover {
+	background-color: hsl(0, 0%, 90%);
+	cursor: pointer;
+	box-shadow: black 0px 0px 3px;
+}
+
+.dropDown {
+	position: absolute;
+	background-color: white;
+	right: 0px;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.2s ease-in-out;
+	color: black;
+	box-shadow: black 0px 0px 3px;
+}
+
+.dropDown.open {
+	transform: scaleY(1);
+}
+
+.editButton,
+.deleteButton {
+	padding: 5px;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+	background-color: hsl(0, 0%, 90%);
+	cursor: pointer;
+	box-shadow: black 0px 0px 3px;
+}
+
+.deleteDialog {
+	font-size: 18px;
+}
+
+.deleteButtons {
+	margin-top: 10px;
+	display: flex;
+	gap: 10px;
+}

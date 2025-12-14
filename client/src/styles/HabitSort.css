@@ -1,0 +1,64 @@
+.sortContainer {
+}
+
+.sortButton {
+	border: rgb(0, 30, 255) 3px solid;
+	background-color: rgb(199, 253, 255);
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.sortButton:hover {
+	background-color: rgb(170, 252, 255);
+	cursor: pointer;
+	box-shadow: rgb(0, 30, 255) 0px 0px 3px;
+}
+
+.sortDropDownContainer {
+	position: relative;
+}
+
+.sortArrow {
+	transform: rotate(180deg);
+	display: inline-block;
+	transition: transform 0.2s ease-in-out;
+}
+
+.sortArrow.sortOpen {
+	transform: rotate(0deg);
+}
+
+.sortDropDown {
+	display: flex;
+	flex-direction: column;
+	transform: scaleY(0);
+	position: absolute;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: top;
+	width: 230px;
+	background-color: white;
+	z-index: 1;
+	box-shadow: black 0 0 7px;
+}
+
+.sortDropDown.sortOpen {
+	transform: scaleY(1);
+}
+
+.pointsHighDiv,
+.pointsLowDiv,
+.nameADiv,
+.nameZDiv {
+	padding: 5px;
+	display: flex;
+	gap: 5px;
+}
+
+.pointsHighDiv:hover,
+.pointsLowDiv:hover,
+.nameADiv:hover,
+.nameZDiv:hover {
+	background-color: hsl(0, 0%, 95%);
+	box-shadow: black 0 0 3px;
+	cursor: pointer;
+}

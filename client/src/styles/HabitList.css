@@ -1,0 +1,94 @@
+.habitContainer {
+	background-color: hsl(0, 0%, 95%);
+	padding: 20px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	width: 1200px;
+	box-sizing: border-box;
+}
+
+.habitHEADER {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.habitHeader {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.addHabitButton {
+	font-size: 24px;
+	border: black 3px solid;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.addHabitButton:hover {
+	background-color: hsl(0, 0%, 85%);
+	box-shadow: black 0px 0px 3px;
+}
+
+.habitFilterAndSort {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.loadingDiv2 {
+	width: 200px;
+	height: 200px;
+}
+
+.habitCards {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.habitCard {
+	width: 282.5px;
+	box-sizing: border-box;
+}
+
+.habitCard.good {
+	border: rgb(0, 133, 0) 3px solid;
+}
+
+.habitCard.bad {
+	border: rgb(197, 14, 14) 3px solid;
+}
+
+.habitTop {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	height: 76px;
+	box-sizing: border-box;
+}
+
+.habitTop.good {
+	background-color: rgb(0, 133, 0);
+}
+
+.habitTop.bad {
+	background-color: rgb(197, 14, 14);
+}
+
+.habitTitle {
+	font-size: 24px;
+}
+
+.habitBottom {
+	padding: 10px;
+	height: 100%;
+	background-color: white;
+	font-size: 20px;
+	height: 89px;
+	box-sizing: border-box;
+}

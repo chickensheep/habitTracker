@@ -1,0 +1,107 @@
+.calanderHabitContainer {
+	background-color: hsl(0, 0%, 95%);
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calanderHabitHeader {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 20px;
+}
+
+.habitsTable {
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 20px;
+}
+
+.getOut {
+	display: none;
+}
+
+.habitTableHeader {
+	padding: 10px;
+	background-color: #065f46;
+	border: 2px black solid;
+	color: #ffff;
+}
+
+.habitTableBody {
+	border: 2px black solid;
+	padding: 10px;
+}
+
+.even {
+	background-color: #ecfdf5;
+}
+
+.odd {
+	background-color: #d1fae5;
+}
+
+.doneCheckbox {
+	transform: scale(2);
+}
+
+.loadingDiv {
+	width: 100px;
+	height: 100px;
+}
+
+.reflectionHeader {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.reflectionTextArea {
+	width: 100%;
+	resize: vertical;
+	font-size: 20px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.summaryHeader {
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.summaryTableContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.summaryTable {
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+
+.summaryTableHead {
+	background-color: #7c2d12;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border: 2px black solid;
+}
+
+.summaryTableBody {
+	background-color: #fff7ed;
+	border: 2px black solid;
+	padding: 10px;
+	font-size: 50px;
+}

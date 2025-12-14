@@ -1,0 +1,28 @@
+.habitAddContainer {
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	padding: 20px;
+	width: 1200px;
+	box-sizing: border-box;
+}
+
+.habitAddHeader {
+	font-size: 36px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.habitAddForm {
+	font-size: 18px;
+}
+
+.habitAddSubmit,
+button {
+	font-size: 18px;
+}
+
+.habitAddBottom {
+	display: flex;
+	gap: 5px;
+}
