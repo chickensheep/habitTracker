@@ -18,7 +18,7 @@ const HabitAdd = () => {
 	const handleSubmitAdd = async (e) => {
 		e.preventDefault();
 
-		await fetch("http://localhost:3000/habits/add", {
+		await fetch("https://habittracker-server-iupw.onrender.com/habits/add", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({

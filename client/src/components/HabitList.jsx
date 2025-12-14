@@ -26,7 +26,9 @@ function HabitList() {
 	useEffect(() => {
 		async function loadHabits() {
 			setLoading(true);
-			const res = await fetch("http://localhost:3000/habits");
+			const res = await fetch(
+				"https://habittracker-server-iupw.onrender.com/habits"
+			);
 			const data = await res.json();
 			setHabitList(data);
 

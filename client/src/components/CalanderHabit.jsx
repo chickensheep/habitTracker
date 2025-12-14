@@ -13,15 +13,18 @@ const CalanderHabit = (props) => {
 
 	const loadCalanderHabit = async () => {
 		setLoading(true);
-		const res = await fetch("http://localhost:3000/calander/habit", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({
-				date: props.displayDate,
-				month: props.displayMonth,
-				year: props.displayYear,
-			}),
-		});
+		const res = await fetch(
+			"https://habittracker-server-iupw.onrender.com/calander/habit",
+			{
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					date: props.displayDate,
+					month: props.displayMonth,
+					year: props.displayYear,
+				}),
+			}
+		);
 
 		const {
 			completed,
@@ -53,18 +56,21 @@ const CalanderHabit = (props) => {
 		setLoading(true);
 		const done = e.target.checked;
 
-		await fetch("http://localhost:3000/calander/habit/done", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({
-				date: props.displayDate,
-				month: props.displayMonth,
-				year: props.displayYear,
-				done: done,
-				id: habitid,
-				points: points,
-			}),
-		});
+		await fetch(
+			"https://habittracker-server-iupw.onrender.com/calander/habit/done",
+			{
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					date: props.displayDate,
+					month: props.displayMonth,
+					year: props.displayYear,
+					done: done,
+					id: habitid,
+					points: points,
+				}),
+			}
+		);
 
 		loadCalanderHabit();
 	};
@@ -75,16 +81,19 @@ const CalanderHabit = (props) => {
 	};
 
 	const updateReflection = async () => {
-		const res = await fetch("http://localhost:3000/calander/habit/reflection", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({
-				date: props.displayDate,
-				month: props.displayMonth,
-				year: props.displayYear,
-				reflection: reflection,
-			}),
-		});
+		const res = await fetch(
+			"https://habittracker-server-iupw.onrender.com/calander/habit/reflection",
+			{
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					date: props.displayDate,
+					month: props.displayMonth,
+					year: props.displayYear,
+					reflection: reflection,
+				}),
+			}
+		);
 	};
 
 	return (

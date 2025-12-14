@@ -74,14 +74,17 @@ const Stats = () => {
 	useEffect(() => {
 		const load = async () => {
 			setLoading(true);
-			const res = await fetch("http://localhost:3000/stats", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({
-					month: displayMonth,
-					year: displayYear,
-				}),
-			});
+			const res = await fetch(
+				"https://habittracker-server-iupw.onrender.com/stats",
+				{
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({
+						month: displayMonth,
+						year: displayYear,
+					}),
+				}
+			);
 
 			const {
 				date,

@@ -36,7 +36,7 @@ const HabitListDropDown = (props) => {
 	const navigate = useNavigate();
 
 	const confirmDeleteDialog = async () => {
-		await fetch("http://localhost:3000/habits/delete", {
+		await fetch("https://habittracker-server-iupw.onrender.com/habits/delete", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
@@ -48,7 +48,9 @@ const HabitListDropDown = (props) => {
 		dialogRef.current.close();
 
 		async function loadHabits() {
-			const res = await fetch("http://localhost:3000/habits");
+			const res = await fetch(
+				"https://habittracker-server-iupw.onrender.com/habits"
+			);
 			const data = await res.json();
 			props.setHabitList(data);
 

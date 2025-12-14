@@ -21,7 +21,7 @@ const HabitCard = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		await fetch("http://localhost:3000/habits/edit", {
+		await fetch("https://habittracker-server-iupw.onrender.com/habits/edit", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
