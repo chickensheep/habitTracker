@@ -5,7 +5,7 @@ tis is like a random late night motivation ok its 1:20am 30-10-2025. basically i
 one is i lazy find like uk an app that suits specifically for my tis idea ukuk and
 two is ye ofc i wanna codeeee ok maybe not i wanna but ye i ok uk wat ya i wanna code like i wanna create sth myself
 three ye freaking get my coding habit back ok ik now is prolly not the best time wif my school exam stuff coming and the projects but ye there is nvr a good time so why not now
-four ok why i suddenly wanna do tis is cos ye late night motivation to improve myself ofc ofc and blud CANNOTTTT stop touching his pp like ohmygyattttttttt i legit ye ok im not gonna say anything haha ok but ye we will be bak
+four ok why i suddenly wanna do tis is cos ye late night motivation to improve myself
 
 ok ehhh tbh ye tis is me b4 the project la so ofc blud is so excited and stuff but i know along the way blud will wanna kill himself ok butttt tbh i dun tink tis project is tat complicated soooo ye
 
