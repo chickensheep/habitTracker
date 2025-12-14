@@ -1,4 +1,4 @@
-import { habitRouter } from "./habit.js";
+import { habitRouter } from "./habits.js";
 import { calanderRouter } from "./calander.js";
 
 import express from "express";
