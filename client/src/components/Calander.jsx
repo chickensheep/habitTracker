@@ -4,6 +4,12 @@ import "../styles/Calander.css";
 import { CalanderHabit } from "./CalanderHabit";
 
 function Calander() {
+	useEffect(() => {
+		fetch("https://habittracker-server-iupw.onrender.com").then(() => {
+			console.log("Server awake");
+		});
+	});
+
 	// get todays date
 
 	const today = new Date();
